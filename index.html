@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>La Fonda Antioqueña · Colombian restaurant on Melrose Ave, Los Angeles</title>
+  <meta name="description" content="La Fonda Antioqueña, a Colombian restaurant at 5125 Melrose Ave in Los Angeles. Bandeja paisa, churrasco, sancocho and the classics of Antioquia, served in a cream-walled dining room under brass chandeliers. Open every day 10 am – 6:45 pm.">
+  <meta name="theme-color" content="#F6EFE3">
+  <meta property="og:type" content="restaurant">
+  <meta property="og:title" content="La Fonda Antioqueña · Colombian restaurant on Melrose Ave">
+  <meta property="og:description" content="Bandeja paisa, churrasco and sancocho on Melrose Avenue, Los Angeles. Open every day 10 am – 6:45 pm.">
+  <meta property="og:image" content="https://aathii.github.io/la-fonda-demo/media/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://aathii.github.io/la-fonda-demo/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://aathii.github.io/la-fonda-demo/media/og.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23B1261C'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='36' fill='%23F6EFE3'%3ELF%3C/text%3E%3C/svg%3E">
+  <link rel="preload" as="font" type="font/woff2" href="fonts/source-sans-3.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="fonts/fraunces-italic.woff2" crossorigin>
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "La Fonda Antioqueña",
+    "servesCuisine": "Colombian",
+    "priceRange": "$$",
+    "telephone": "+1-323-957-5164",
+    "image": "https://aathii.github.io/la-fonda-demo/media/og.jpg",
+    "address": { "@type": "PostalAddress", "streetAddress": "5125 Melrose Ave", "addressLocality": "Los Angeles", "addressRegion": "CA", "postalCode": "90038", "addressCountry": "US" },
+    "geo": { "@type": "GeoCoordinates", "latitude": 34.0836608, "longitude": -118.3119938 },
+    "sameAs": ["https://www.instagram.com/lafondaantioquenala/", "https://www.doordash.com/store/la-fonda-antioque%C3%B1a-los-angeles-412762/", "https://postmates.com/store/la-fonda-antioquena/G8Qele-lRIWKfLqdcQejqQ"],
+    "openingHoursSpecification": [ { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "10:00", "closes": "18:45" } ],
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.6", "bestRating": "5", "ratingCount": "1000" }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#story">Skip to content</a>
+
+  <header class="nav" id="nav">
+    <a class="brand" href="#top" aria-label="La Fonda Antioqueña, home">
+      <span class="brand__name">La Fonda</span>
+      <span class="brand__sub">Antioqueña</span>
+    </a>
+    <nav class="nav__links" aria-label="Sections">
+      <a href="#story">Our Story</a>
+      <a href="#dishes">Dishes</a>
+      <a href="#menu">Menu</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <div class="nav__right">
+      <a class="nav__phone" href="tel:+13239575164">(323) 957-5164</a>
+      <a class="btn btn--accent nav__cta" href="https://www.doordash.com/store/la-fonda-antioque%C3%B1a-los-angeles-412762/" target="_blank" rel="noopener">Order now</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- FILM HERO: outside → the doors open → inside → the sign -->
+    <section class="film" id="film" aria-label="Arriving at La Fonda Antioqueña">
+      <video class="film__video" id="filmVideo" muted playsinline preload="none" data-cut="8" data-freeze="3" aria-hidden="true">
+        <source src="media/film-1080.mp4" type="video/mp4">
+      </video>
+      <picture aria-hidden="true"><source media="(orientation: portrait)" srcset="media/poster-p.webp" width="720" height="1280"><img class="film__poster" src="media/poster.webp" width="1440" height="810" alt="" fetchpriority="high" decoding="async"></picture>
+      <picture class="film__last" aria-hidden="true">
+        <img data-src="media/film-last.webp" data-src-p="media/film-last-p.webp" width="1920" height="1080" alt="">
+      </picture>
+      <div class="doors" id="doors" aria-hidden="true">
+        <div class="doors__panel doors__panel--l"><img data-src="media/door-last.webp" data-src-p="media/door-last-p.webp" alt="" width="1920" height="1080"></div>
+        <div class="doors__panel doors__panel--r"><img data-src="media/door-last.webp" data-src-p="media/door-last-p.webp" alt="" width="1920" height="1080"></div>
+      </div>
+      <div class="film__scrim" aria-hidden="true"></div>
+      <canvas class="film__embers" id="embers" aria-hidden="true"></canvas>
+
+      <div class="film__stage" id="filmStage">
+      <div class="plaque" id="plaque">
+        <h1 class="plaque__name" lang="es"><span class="plaque__w">La Fonda</span> <span class="plaque__w">Antioqueña</span></h1>
+        <svg class="plaque__flourish" viewBox="0 0 160 20" aria-hidden="true">
+          <path d="M80 10 C66 2 56 2 48 10 S30 18 18 10" fill="none" stroke="#B1261C" stroke-width="2" stroke-linecap="round"/>
+          <path d="M80 10 C94 2 104 2 112 10 S130 18 142 10" fill="none" stroke="#B1261C" stroke-width="2" stroke-linecap="round"/>
+          <path d="M76 10l4-4 4 4-4 4z" fill="#B1261C"/>
+        </svg>
+      </div>
+      <div class="film__caption" id="filmCaption">
+        <p class="plaque__line"><span lang="es">Cocina antioqueña</span> · Melrose Ave, Los Angeles</p>
+        <div class="plaque__actions">
+          <a class="btn btn--accent" href="https://www.doordash.com/store/la-fonda-antioque%C3%B1a-los-angeles-412762/" target="_blank" rel="noopener">Order now</a>
+          <a class="btn btn--ghost" href="#dishes">See the dishes</a>
+        </div>
+      </div>
+        <a class="film__hint" id="filmHint" href="#story">Come inside <span aria-hidden="true">↓</span></a>
+      </div>
+
+      <p class="film__meta" id="filmMeta">5125 Melrose Ave · Open every day 10 am – 6:45 pm</p>
+      <button class="btn btn--ghost btn--sm film__play" id="filmPlay" type="button" hidden>Play the film</button>
+      <button class="btn btn--ghost btn--sm film__skip" id="filmSkip" type="button">Skip film</button>
+    </section>
+
+    <!-- STORY -->
+    <section class="section story" id="story">
+      <div class="wrap grid-2">
+        <figure class="story__figure reveal">
+          <picture>
+            <source srcset="media/photos/plate-steak-1000.webp 1000w, media/photos/plate-steak.webp 2000w" sizes="(min-width: 900px) 55vw, 100vw" type="image/webp">
+            <img srcset="media/photos/plate-steak-1000.jpg 1000w, media/photos/plate-steak.jpg 2000w" sizes="(min-width: 900px) 55vw, 100vw" src="media/photos/plate-steak.jpg" width="2000" height="1125" alt="Grilled steak with a fried egg, arepa, beans and avocado on the table at La Fonda Antioqueña" loading="lazy">
+          </picture>
+        </figure>
+        <div class="story__text">
+          <p class="eyebrow reveal" style="--i:0" lang="es">Bienvenidos</p>
+          <h2 class="display reveal" style="--i:1">An Antioquian fonda on Melrose Avenue</h2>
+          <p class="story__pull reveal" style="--i:2">Step off Melrose and into a cream-walled dining room: wooden tables and chairs, brass pendant lamps, a ceiling fan turning slowly, Colombia on the walls.</p>
+          <p class="lede reveal" style="--i:3">The plates come the Antioquian way, generous and unhurried, from the bandeja paisa the regulars order most to a sancocho that has simmered all morning.</p>
+          <p class="story__proof reveal" style="--i:4"><strong>4.6 out of 5</strong> across 1,000+ ratings on DoorDash and Postmates</p>
+          <div class="story__actions reveal" style="--i:5">
+            <a class="btn btn--outline" href="#dishes">See the dishes</a>
+            <a class="story__link" href="#visit">Find us on Melrose →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DISHES RAIL -->
+    <section class="section dishes" id="dishes">
+      <div class="rail-stage" id="railStage">
+        <div class="wrap dishes__head">
+          <p class="eyebrow reveal" style="--i:0">Signature dishes</p>
+          <h2 class="display reveal" style="--i:1">What the regulars order</h2>
+        </div>
+        <div class="rail" id="rail">
+          <ul class="rail__track" id="railTrack" role="list">
+            <li class="card">
+              <div class="card__visual"><picture><source srcset="media/photos/bandeja-paisa-640.webp 640w, media/photos/bandeja-paisa.webp 1200w" sizes="(min-width: 1024px) 420px, 82vw" type="image/webp"><img srcset="media/photos/bandeja-paisa-640.jpg 640w, media/photos/bandeja-paisa.jpg 1200w" sizes="(min-width: 1024px) 420px, 82vw" src="media/photos/bandeja-paisa.jpg" width="1200" height="900" alt="Bandeja paisa: steak over beans and rice with plantains, pork crackling, arepa, avocado and a fried egg" loading="lazy"></picture><span class="tag">#1 most liked</span></div>
+              <div class="card__body">
+                <p class="eyebrow eyebrow--sm">Typical dish</p>
+                <h3 class="card__title" lang="es">Bandeja Paisa</h3>
+                <p class="card__desc">Country dinner, steak served over beans, rice, ripe plantains, pork crackling, arepa, avocado, tomato and egg on top.</p>
+                <div class="card__foot"><span class="card__price">$26.95</span><a class="card__link" href="https://www.doordash.com/store/la-fonda-antioque%C3%B1a-los-angeles-412762/" target="_blank" rel="noopener" aria-label="Order Bandeja Paisa on DoorDash">Order</a></div>
+              </div>
+            </li>
+            <li class="card">
+              <div class="card__visual"><picture><source srcset="media/photos/ave-maria-pues-640.webp 640w, media/photos/ave-maria-pues.webp 1200w" sizes="(min-width: 1024px) 420px, 82vw" type="image/webp"><img srcset="media/photos/ave-maria-pues-640.jpg 640w, media/photos/ave-maria-pues.jpg 1200w" sizes="(min-width: 1024px) 420px, 82vw" src="media/photos/ave-maria-pues.jpg" width="1200" height="900" alt="Ave Maria Pues: a large plate of steak with rice, plantains, sausage, arepa and pork crackling" loading="lazy"></picture><span class="tag">The big plate</span></div>
+              <div class="card__body">
+                <p class="eyebrow eyebrow--sm">Typical dish</p>
+                <h3 class="card__title" lang="es">Ave Maria Pues</h3>
+                <p class="card__desc">Holy Mary, a large plate steak served with rice, plantains, sausage, arepa, and pork crackling.</p>
+                <div class="card__foot"><span class="card__price">$30.95</span><a class="card__link" href="https://www.doordash.com/store/la-fonda-antioque%C3%B1a-los-angeles-412762/" target="_blank" rel="noopener" aria-label="Order Ave Maria Pues on DoorDash">Order</a></div>
+              </div>
+            </li>
+            <li class="card">
+              <div class="card__visual"><picture><source srcset="media/photos/churrasco-640.webp 640w, media/photos/churrasco.webp 1200w" sizes="(min-width: 1024px) 420px, 82vw" type="image/webp"><img srcset="media/photos/churrasco-640.jpg 640w, media/photos/churrasco.jpg 1200w" sizes="(min-width: 1024px) 420px, 82vw" src="media/photos/churrasco.jpg" width="1200" height="900" alt="Churrasco: grilled New York steak with rice, beans, fried bananas, Colombian potatoes and chimichurri" loading="lazy"></picture><span class="tag">From the grill</span></div>
+              <div class="card__body">
+                <p class="eyebrow eyebrow--sm">Beef &amp; pork</p>
+                <h3 class="card__title" lang="es">Churrasco</h3>
+                <p class="card__desc">Grilled New York steak, grilled to your liking. Served with rice, beans, fried bananas, Colombian potatoes and chimichurri salsa.</p>
+                <div class="card__foot"><span class="card__price">$30.95</span><a class="card__link" href="https://www.doordash.com/store/la-fonda-antioque%C3%B1a-los-angeles-412762/" target="_blank" rel="noopener" aria-label="Order Churrasco on DoorDash">Order</a></div>
+              </div>
+            </li>
+            <li class="card">
+              <div class="card__visual"><picture><source srcset="media/photos/sancocho-de-res-640.webp 640w, media/photos/sancocho-de-res.webp 880w" sizes="(min-width: 1024px) 420px, 82vw" type="image/webp"><img srcset="media/photos/sancocho-de-res-640.jpg 640w, media/photos/sancocho-de-res.jpg 880w" sizes="(min-width: 1024px) 420px, 82vw" src="media/photos/sancocho-de-res.jpg" width="1200" height="900" alt="Sancocho de res: oxtail soup with potatoes, cassava, plantain and corn" loading="lazy"></picture><span class="tag">Slow-simmered</span></div>
+              <div class="card__body">
+                <p class="eyebrow eyebrow--sm">Soups</p>
+                <h3 class="card__title" lang="es">Sancocho de Res</h3>
+                <p class="card__desc">Oxtail soup, a delicious soup made with oxtail, potatoes, cassava, plantain, fresh corn, cilantro and cumin.</p>
+                <div class="card__foot"><span class="card__price">$21.95</span><a class="card__link" href="https://www.doordash.com/store/la-fonda-antioque%C3%B1a-los-angeles-412762/" target="_blank" rel="noopener" aria-label="Order Sancocho de Res on DoorDash">Order</a></div>
+              </div>
+            </li>
+            <li class="card">
+              <div class="card__visual"><picture><source srcset="media/photos/sopa-de-mondongo-640.webp 640w, media/photos/sopa-de-mondongo.webp 1200w" sizes="(min-width: 1024px) 420px, 82vw" type="image/webp"><img srcset="media/photos/sopa-de-mondongo-640.jpg 640w, media/photos/sopa-de-mondongo.jpg 1200w" sizes="(min-width: 1024px) 420px, 82vw" src="media/photos/sopa-de-mondongo.jpg" width="1200" height="900" alt="Sopa de mondongo: beef honeycomb soup with potatoes, cassava and vegetables" loading="lazy"></picture><span class="tag">The classic soup</span></div>
+              <div class="card__body">
+                <p class="eyebrow eyebrow--sm">Soups</p>
+                <h3 class="card__title" lang="es">Sopa de Mondongo</h3>
+                <p class="card__desc">Beef honeycomb soup, it is made with beef honey comb, potatoes, cassava, peas, carrots, garlic, cumin, cilantro and spices.</p>
+                <div class="card__foot"><span class="card__price">$21.95</span><a class="card__link" href="https://www.doordash.com/store/la-fonda-antioque%C3%B1a-los-angeles-412762/" target="_blank" rel="noopener" aria-label="Order Sopa de Mondongo on DoorDash">Order</a></div>
+              </div>
+            </li>
+            <li class="card">
+              <div class="card__visual"><picture><source srcset="media/photos/empanadas-640.webp 640w, media/photos/empanadas.webp 1200w" sizes="(min-width: 1024px) 420px, 82vw" type="image/webp"><img srcset="media/photos/empanadas-640.jpg 640w, media/photos/empanadas.jpg 1200w" sizes="(min-width: 1024px) 420px, 82vw" src="media/photos/empanadas.jpg" width="1200" height="900" alt="Golden fried Colombian empanadas" loading="lazy"></picture><span class="tag">#2 most liked</span></div>
+              <div class="card__body">
+                <p class="eyebrow eyebrow--sm">Appetizers</p>
+                <h3 class="card__title" lang="es">Empanadas</h3>
+                <p class="card__desc">Meat pies. The crowd favorite to start, with ají on the side.</p>
+                <div class="card__foot"><span class="card__price">$3.00</span><a class="card__link" href="https://www.doordash.com/store/la-fonda-antioque%C3%B1a-los-angeles-412762/" target="_blank" rel="noopener" aria-label="Order Empanadas on DoorDash">Order</a></div>
+              </div>
+            </li>
+          </ul>
+          <div class="rail__controls">
+            <button class="rail__btn" id="railPrev" type="button" aria-label="Previous dishes">←</button>
+            <button class="rail__btn" id="railNext" type="button" aria-label="Next dishes">→</button>
+          </div>
+          <p class="rail-hint" aria-hidden="true">Keep scrolling, the plates glide by<span class="rail-hint__arrow">→</span></p>
+        </div>
+        <p class="wrap dishes__note">Descriptions and prices as listed on DoorDash and Postmates, September 2026. Prices may differ in the restaurant.</p>
+        <div class="wrap dishes__more">
+          <a class="btn btn--outline" href="#menu">Browse the full menu</a>
+          <span class="dishes__more-alt">Order on <a href="https://www.doordash.com/store/la-fonda-antioque%C3%B1a-los-angeles-412762/" target="_blank" rel="noopener">DoorDash</a> or <a href="https://postmates.com/store/la-fonda-antioquena/G8Qele-lRIWKfLqdcQejqQ" target="_blank" rel="noopener">Postmates</a></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU:START (generated by scripts/build-menu.py from data/menu.json; edit the JSON, not this block) -->
+    <section class="section menu" id="menu">
+      <div class="wrap">
+        <div class="menu__head">
+          <div>
+            <p class="eyebrow reveal" style="--i:0" lang="es">Todo el menú</p>
+            <h2 class="display reveal" style="--i:1">The menu</h2>
+          </div>
+          <p class="menu__source reveal" style="--i:2">Prices as listed on DoorDash, September 2026. The full menu with photos is on <a href="https://www.doordash.com/store/la-fonda-antioque%C3%B1a-los-angeles-412762/" target="_blank" rel="noopener">DoorDash</a> and <a href="https://postmates.com/store/la-fonda-antioquena/G8Qele-lRIWKfLqdcQejqQ" target="_blank" rel="noopener">Postmates</a>.</p>
+        </div>
+        <div class="menu__tabs" role="tablist" aria-label="Menu categories"><button class="menu__tab" role="tab" id="tab-appetizers" aria-controls="panel-appetizers" aria-selected="true" tabindex="0"><span>Appetizers</span><small lang="es">Entradas</small></button><button class="menu__tab" role="tab" id="tab-breakfast" aria-controls="panel-breakfast" aria-selected="false" tabindex="-1"><span>Breakfast</span><small lang="es">Desayunos</small></button><button class="menu__tab" role="tab" id="tab-soups-vegetarian" aria-controls="panel-soups-vegetarian" aria-selected="false" tabindex="-1"><span>Soups &amp; Vegetarian</span><small lang="es">Sopas</small></button><button class="menu__tab" role="tab" id="tab-typical-dishes" aria-controls="panel-typical-dishes" aria-selected="false" tabindex="-1"><span>Typical Dishes</span><small lang="es">Platos Típicos</small></button><button class="menu__tab" role="tab" id="tab-beef-pork" aria-controls="panel-beef-pork" aria-selected="false" tabindex="-1"><span>Beef &amp; Pork</span><small lang="es">Carnes</small></button><button class="menu__tab" role="tab" id="tab-chicken" aria-controls="panel-chicken" aria-selected="false" tabindex="-1"><span>Chicken</span><small lang="es">Pollo</small></button><button class="menu__tab" role="tab" id="tab-fish" aria-controls="panel-fish" aria-selected="false" tabindex="-1"><span>Fish</span><small lang="es">Pescados</small></button><button class="menu__tab" role="tab" id="tab-desserts" aria-controls="panel-desserts" aria-selected="false" tabindex="-1"><span>Desserts</span><small lang="es">Postres</small></button><button class="menu__tab" role="tab" id="tab-beverages" aria-controls="panel-beverages" aria-selected="false" tabindex="-1"><span>Beverages</span><small lang="es">Bebidas</small></button></div>
+        <div class="menu__panel" role="tabpanel" id="panel-appetizers" aria-labelledby="tab-appetizers"><ul class="menu__list" role="list"><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Empanadas<span class="menu__tag">#2 most liked</span></h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$3.00</span></div><p class="menu__desc">Meat pies.</p></li><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Pandebono</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$3.00</span></div><p class="menu__desc">Baked cheese bread.</p></li><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Arepa</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$3.50</span></div><p class="menu__desc">Traditional cornmeal flatbread from Colombia.</p></li><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Pastel de Yuca</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$4.00</span></div><p class="menu__desc">Cassava pie.</p></li><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Arepa con Queso</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$8.00</span></div><p class="menu__desc">Arepa with cheese.</p></li><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Chorizo</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$9.00</span></div><p class="menu__desc">Sausage.</p></li><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Morcilla</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$9.00</span></div><p class="menu__desc">Blood sausage.</p></li><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Maduro</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$9.00</span></div><p class="menu__desc">Sweet plantains.</p></li><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Yuca</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$9.00</span></div><p class="menu__desc">Cassava.</p></li><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Papa Criolla</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$9.50</span></div><p class="menu__desc">Yellow potatoes.</p></li><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Papa a la Francesa</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$6.00</span></div><p class="menu__desc">French fries.</p></li><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Arepa con Carne</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$16.95</span></div><p class="menu__desc">Arepa with meat.</p></li><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Chicharrón</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$20.00</span></div><p class="menu__desc">Pork cracklings.</p></li></ul></div><div class="menu__panel" role="tabpanel" id="panel-breakfast" aria-labelledby="tab-breakfast" hidden><ul class="menu__list" role="list"><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Desayuno Paisa</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$16.95</span></div><p class="menu__desc">Paisa style breakfast: rice, beans, scrambled eggs, tomatoes, empanada and arepa.</p></li><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Desayuno Bogotano</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$16.95</span></div><p class="menu__desc">Bogotá breakfast: arepa with cheese, scrambled eggs, and hot chocolate.</p></li><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Amanecer Colombiano</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$21.95</span></div><p class="menu__desc">Colombian sunrise: a large flat breakfast arepa with steak, cheese, beans, eggs, and hot chocolate.</p></li></ul></div><div class="menu__panel" role="tabpanel" id="panel-soups-vegetarian" aria-labelledby="tab-soups-vegetarian" hidden><p class="menu__note">The soups can be eaten as a complete meal and are served with fries, avocado and arepa.</p><ul class="menu__list" role="list"><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Sancocho de Res<span class="menu__tag">#3 most liked</span></h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$21.95</span></div><p class="menu__desc">Oxtail soup, a delicious soup made with oxtail, potatoes, cassava, plantain, fresh corn, cilantro and cumin.</p></li><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Sancocho de Pescado</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$21.95</span></div><p class="menu__desc">Catfish soup, made with potatoes, cassava and green plantains.</p></li><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Sopa de Mondongo</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$21.95</span></div><p class="menu__desc">Beef honeycomb soup with potatoes, cassava, peas, carrots, garlic, cumin, cilantro and spices.</p></li><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Sopa de Arroz</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$21.95</span></div><p class="menu__desc">Chicken and rice soup.</p></li><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Lentejas</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$21.95</span></div><p class="menu__desc">Lentil soup, lentils with pork.</p></li><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Small soups</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$10.00</span></div><p class="menu__desc">Just the soup.</p></li><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Vegetarian Dish</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$22.95</span></div><p class="menu__desc">Beans, rice, fried plantains, green plantains, cassava, yellow potatoes and one egg.</p></li><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Caesar Salad</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$16.95</span></div><p class="menu__desc">Lettuce, Parmesan cheese and croutons served with caesar dressing.</p></li><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Tropical Salad</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$17.95</span></div><p class="menu__desc">Lettuce, tomatoes, red pepper, green pepper, carrots, avocado, Parmesan cheese served with our delicious honey.</p></li></ul></div><div class="menu__panel" role="tabpanel" id="panel-typical-dishes" aria-labelledby="tab-typical-dishes" hidden><ul class="menu__list" role="list"><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Bandeja Paisa<span class="menu__tag">#1 most liked</span></h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$26.95</span></div><p class="menu__desc">Country dinner, steak served over beans, rice, ripe plantains, pork crackling, arepa, avocado, tomato and egg on top.</p></li><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Ave Maria Pues</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$30.95</span></div><p class="menu__desc">Holy Mary, a large plate steak served with rice, plantains, sausage, arepa, and pork crackling.</p></li><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Frijoles con Chicharrón</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$21.95</span></div><p class="menu__desc">Pinto bean stew, pinto beans stewed with pork, served with rice, arepa, avocado and tomato.</p></li><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Tamal</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$18.95</span></div><p class="menu__desc">Cornmeal masa with chicken, pork, beef and vegetables, wrapped in a banana leaf. Served with rice, avocado, tomato and arepa.</p></li><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Carne Desmechada</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$22.95</span></div><p class="menu__desc">Shredded beef stewed with tomatoes, onions and garlic until it falls apart. Served with beans, rice, plantains, arepa, avocado and tomato.</p></li></ul></div><div class="menu__panel" role="tabpanel" id="panel-beef-pork" aria-labelledby="tab-beef-pork" hidden><ul class="menu__list" role="list"><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Churrasco</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$30.95</span></div><p class="menu__desc">Grilled New York steak, grilled to your liking. Served with rice, beans, fried bananas, Colombian potatoes and chimichurri salsa.</p></li><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Carne Asada</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$24.95</span></div><p class="menu__desc">Grilled top sirloin. Served with beans, rice, fried plantains and avocado.</p></li><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Plato Tropical</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$24.95</span></div><p class="menu__desc">Charbroiled sirloin steak cooked with tomato, bell pepper, onion and wine. Served with rice, beans and fried plantains.</p></li><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Sobrebarriga en Salsa</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$24.95</span></div><p class="menu__desc">Beef brisket stewed in a tomato, onion and garlic sauce. Served with rice, fried cassava, potatoes, avocado, tomato and arepa.</p></li><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Sobrebarriga al Horno</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$24.95</span></div><p class="menu__desc">Oven roasted brisket served with cassava, potatoes, beans, rice and fried plantains.</p></li><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Bistec a Caballo</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$24.95</span></div><p class="menu__desc">Steak on horseback: top sirloin with a tomato, onion and garlic sauce, potatoes, over-easy egg, cassava, rice, beans, avocado and arepa.</p></li><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Chuletas de Cerdo</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$24.95</span></div><p class="menu__desc">Breaded pork chops, served with rice, beans and fried plantains.</p></li><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Lomo de Cerdo a la Parrilla</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$24.95</span></div><p class="menu__desc">Grilled pork loin, served with rice, beans and fried plantains.</p></li><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Hígado Asado</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$22.95</span></div><p class="menu__desc">Grilled beef liver with fried onion, served with beans, rice, plantains, potatoes, over-easy egg, cassava, avocado and arepa.</p></li><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Hígado en Salsa</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$22.95</span></div><p class="menu__desc">Beef liver stewed in a tomato, onion and garlic sauce. Served with potatoes, cassava, rice, avocado, tomato and arepa.</p></li></ul></div><div class="menu__panel" role="tabpanel" id="panel-chicken" aria-labelledby="tab-chicken" hidden><ul class="menu__list" role="list"><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Arroz con Pollo</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$24.95</span></div><p class="menu__desc">Shredded chicken cooked with rice, peas, capers, olives, cumin and chicken stock. Served with potatoes, cassava and fried plantains.</p></li><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Pollo al Ajillo</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$24.95</span></div><p class="menu__desc">Chicken breast sautéed in a garlic sauce. Served with rice, avocado, potatoes, cassava and fried plantains.</p></li><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Milanesa</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$24.95</span></div><p class="menu__desc">Breaded chicken breast served with rice, beans and fried plantains.</p></li></ul></div><div class="menu__panel" role="tabpanel" id="panel-fish" aria-labelledby="tab-fish" hidden><ul class="menu__list" role="list"><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Mojarra Frita</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$25.95</span></div><p class="menu__desc">Fried whole porgy.</p></li><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Camarones al Ajillo</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$25.95</span></div><p class="menu__desc">Fresh shrimp in garlic sauce served with rice, potatoes, cassava and fried plantains.</p></li><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Filete Sudado</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$25.95</span></div><p class="menu__desc">Stewed fillet made with potatoes and cassava. Served with rice and beans.</p></li><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Bagre Sudado</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$25.95</span></div><p class="menu__desc">Stewed catfish with tomatoes, potatoes, onions and garlic. Served with rice, avocado, potato, cassava and arepa.</p></li></ul></div><div class="menu__panel" role="tabpanel" id="panel-desserts" aria-labelledby="tab-desserts" hidden><ul class="menu__list" role="list"><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Arroz con Leche</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$10.00</span></div><p class="menu__desc">Rice pudding.</p></li><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Brevas con Arequipe</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$10.00</span></div><p class="menu__desc">Figs with dulce de leche.</p></li><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Brevas Solas</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$10.00</span></div><p class="menu__desc">Figs.</p></li><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Arequipe</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$10.00</span></div><p class="menu__desc">Dulce de leche.</p></li><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Flan</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$10.00</span></div><p class="menu__desc">Milk custard with syrup.</p></li><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Mazamorra</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$10.00</span></div><p class="menu__desc">Hominy in milk.</p></li></ul></div><div class="menu__panel" role="tabpanel" id="panel-beverages" aria-labelledby="tab-beverages" hidden><ul class="menu__list" role="list"><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Juices</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$8.00</span></div><p class="menu__desc">Fresh fruit juices.</p></li><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Lemonade</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$8.00</span></div></li><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Sodas</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$3.75</span></div></li><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Hot Chocolate</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$7.00</span></div></li><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Chocolate with Cheese</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$8.00</span></div></li><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Aguapanela</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$7.00</span></div><p class="menu__desc">Brown sugar tea.</p></li><li class="menu__item"><div class="menu__row"><h3 class="menu__name" lang="es">Coffee</h3><span class="menu__dots" aria-hidden="true"></span><span class="menu__price">$4.50</span></div></li></ul></div>
+      </div>
+    </section>
+    <!-- MENU:END -->
+
+    <!-- WHAT PEOPLE SAY -->
+    <section class="section proof" id="proof">
+      <div class="wrap">
+        <p class="eyebrow reveal" style="--i:0">What people say</p>
+        <h2 class="display reveal" style="--i:1">In their own words</h2>
+        <ul class="quotes" role="list">
+          <li class="quote reveal" style="--i:2">
+            <blockquote>“This is my goto Colombian spot. The food is excellent and consistent. The staff is courteous, and always leave me with a smile on my face.”</blockquote>
+            <p class="quote__by">Keeyun R. · DoorDash review, June 2023</p>
+          </li>
+          <li class="quote reveal" style="--i:3">
+            <blockquote>“The empanadas were amazing and a great value with all the meat packed in! The sancocho de res was also delicious.”</blockquote>
+            <p class="quote__by">Stephanie D. · DoorDash review, December 2025</p>
+          </li>
+          <li class="quote quote--stat reveal" style="--i:4">
+            <p class="quote__big">4.6<span>/5</span></p>
+            <p class="quote__by">1,000+ ratings on DoorDash · 1,000+ on Postmates</p>
+            <a class="quote__more" href="https://www.doordash.com/store/la-fonda-antioque%C3%B1a-los-angeles-412762/" target="_blank" rel="noopener">Read the reviews on DoorDash →</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- READY TO EAT -->
+    <section class="section order" id="order">
+      <div class="wrap order__inner">
+        <div>
+          <p class="eyebrow eyebrow--light reveal" style="--i:0" lang="es">Para llevar</p>
+          <h2 class="display display--light reveal" style="--i:1">Ready to eat?</h2>
+          <p class="order__lede reveal" style="--i:2">Delivery and pickup through DoorDash or Postmates, or call the restaurant and it will be ready when you arrive.</p>
+          <p class="order__hours reveal" style="--i:3">Kitchen hours 10:00 am – 6:45 pm, every day.</p>
+        </div>
+        <div class="order__actions reveal" style="--i:4">
+          <a class="btn btn--accent" href="https://www.doordash.com/store/la-fonda-antioque%C3%B1a-los-angeles-412762/" target="_blank" rel="noopener">Order on DoorDash</a>
+          <a class="btn btn--ghost" href="https://postmates.com/store/la-fonda-antioquena/G8Qele-lRIWKfLqdcQejqQ" target="_blank" rel="noopener">Order on Postmates</a>
+          <a class="btn btn--ghost" href="tel:+13239575164">Call (323) 957-5164</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- THE ROOM -->
+    <section class="section room" id="room">
+      <div class="wrap">
+        <p class="eyebrow reveal" style="--i:0">The Room</p>
+        <h2 class="display reveal" style="--i:1">Inside La Fonda</h2>
+        <p class="lede lede--narrow reveal" style="--i:2">A corner storefront with the name in red script over double doors. Inside, tables set for lunch, tiled floors, and the kind of light that makes everyone stay for a second coffee.</p>
+        <ul class="gallery" role="list">
+          <li class="gallery__item gallery__item--tall reveal" style="--i:0">
+            <picture><source srcset="media/photos/room-doors-800.webp 800w, media/photos/room-doors.webp 1200w" sizes="(min-width: 900px) 33vw, 50vw" type="image/webp"><img srcset="media/photos/room-doors-800.jpg 800w, media/photos/room-doors.jpg 1200w" sizes="(min-width: 900px) 33vw, 50vw" src="media/photos/room-doors.jpg" width="1200" height="1200" alt="The glass double doors and leaded arch seen from inside the dining room" loading="lazy"></picture>
+            <span class="gallery__cap">Through the double doors</span>
+          </li>
+          <li class="gallery__item gallery__item--wide reveal" style="--i:1">
+            <picture><source srcset="media/photos/ext-facade-800.webp 800w, media/photos/ext-facade.webp 1600w" sizes="(min-width: 900px) 33vw, 50vw" type="image/webp"><img srcset="media/photos/ext-facade-800.jpg 800w, media/photos/ext-facade.jpg 1600w" sizes="(min-width: 900px) 33vw, 50vw" src="media/photos/ext-facade.jpg" width="1600" height="900" alt="The black storefront with the lit sign and the Colombian flag on Melrose Avenue" loading="lazy"></picture>
+            <span class="gallery__cap">Melrose Avenue, midday</span>
+          </li>
+          <li class="gallery__item reveal" style="--i:2">
+            <picture><source srcset="media/photos/room-bar-800.webp 800w, media/photos/room-bar.webp 1200w" sizes="(min-width: 900px) 33vw, 50vw" type="image/webp"><img srcset="media/photos/room-bar-800.jpg 800w, media/photos/room-bar.jpg 1200w" sizes="(min-width: 900px) 33vw, 50vw" src="media/photos/room-bar.jpg" width="1200" height="1200" alt="The counter with Colombian jerseys and framed photos on the wall" loading="lazy"></picture>
+            <span class="gallery__cap">Colombia on the walls</span>
+          </li>
+          <li class="gallery__item gallery__item--tall reveal" style="--i:3">
+            <picture><source srcset="media/photos/room-table-800.webp 800w, media/photos/room-table.webp 1200w" sizes="(min-width: 900px) 33vw, 50vw" type="image/webp"><img srcset="media/photos/room-table-800.jpg 800w, media/photos/room-table.jpg 1200w" sizes="(min-width: 900px) 33vw, 50vw" src="media/photos/room-table.jpg" width="1200" height="1200" alt="A long wooden table set for a family lunch" loading="lazy"></picture>
+            <span class="gallery__cap">The long table</span>
+          </li>
+          <li class="gallery__item gallery__item--wide reveal" style="--i:0">
+            <picture><source srcset="media/photos/room-lamps-800.webp 800w, media/photos/room-lamps.webp 1600w" sizes="(min-width: 900px) 33vw, 50vw" type="image/webp"><img srcset="media/photos/room-lamps-800.jpg 800w, media/photos/room-lamps.jpg 1600w" sizes="(min-width: 900px) 33vw, 50vw" src="media/photos/room-lamps.jpg" width="1600" height="900" alt="Dining room with brass pendant lamps, ceiling fans and a painting of a woman in traditional dress" loading="lazy"></picture>
+            <span class="gallery__cap">Lamps, fans and the painting</span>
+          </li>
+          <li class="gallery__item reveal" style="--i:1">
+            <picture><source srcset="media/photos/juices-800.webp 800w, media/photos/juices.webp 1200w" sizes="(min-width: 900px) 33vw, 50vw" type="image/webp"><img srcset="media/photos/juices-800.jpg 800w, media/photos/juices.jpg 1200w" sizes="(min-width: 900px) 33vw, 50vw" src="media/photos/juices.jpg" width="1200" height="1200" alt="Two tall fruit juices with lemon on the table" loading="lazy"></picture>
+            <span class="gallery__cap" lang="es">Jugos naturales</span>
+          </li>
+          <li class="gallery__item gallery__item--wide reveal" style="--i:2">
+            <picture><source srcset="media/photos/room-window-800.webp 800w, media/photos/room-window.webp 1600w" sizes="(min-width: 900px) 33vw, 50vw" type="image/webp"><img srcset="media/photos/room-window-800.jpg 800w, media/photos/room-window.jpg 1600w" sizes="(min-width: 900px) 33vw, 50vw" src="media/photos/room-window.jpg" width="1600" height="900" alt="Tables by the front window with afternoon light through the grille" loading="lazy"></picture>
+            <span class="gallery__cap">Window light, afternoon</span>
+          </li>
+          <li class="gallery__item gallery__item--wide reveal" style="--i:3">
+            <picture><source srcset="media/photos/plate-empanadas-800.webp 800w, media/photos/plate-empanadas.webp 1600w" sizes="(min-width: 900px) 33vw, 50vw" type="image/webp"><img srcset="media/photos/plate-empanadas-800.jpg 800w, media/photos/plate-empanadas.jpg 1600w" sizes="(min-width: 900px) 33vw, 50vw" src="media/photos/plate-empanadas.jpg" width="1600" height="900" alt="Golden empanadas with aji on a plate" loading="lazy"></picture>
+            <span class="gallery__cap">Empanadas and ají</span>
+          </li>
+          <li class="gallery__item reveal" style="--i:0">
+            <picture><source srcset="media/photos/platter-800.webp 800w, media/photos/platter.webp 1200w" sizes="(min-width: 900px) 33vw, 50vw" type="image/webp"><img srcset="media/photos/platter-800.jpg 800w, media/photos/platter.jpg 1200w" sizes="(min-width: 900px) 33vw, 50vw" src="media/photos/platter.jpg" width="1200" height="800" alt="A spread of grilled steak, arepa, plantains, beans and chimichurri" loading="lazy"></picture>
+            <span class="gallery__cap">The table, served</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- VISIT -->
+    <section class="section visit" id="visit">
+      <div class="wrap grid-2 grid-2--reverse">
+        <div class="visit__text">
+          <p class="eyebrow reveal" style="--i:0" lang="es">Aquí estamos</p>
+          <h2 class="display reveal" style="--i:1">Find us on Melrose</h2>
+          <p class="visit__status reveal" id="visitStatus" style="--i:2">Open every day 10:00 am – 6:45 pm</p>
+          <address class="visit__address reveal" style="--i:2">
+            <span>5125 Melrose Ave</span>
+            <span>Los Angeles, CA 90038</span>
+            <a class="visit__phone" href="tel:+13239575164">(323) 957-5164</a>
+          </address>
+          <table class="hours reveal" style="--i:3">
+            <caption class="visually-hidden">Opening hours</caption>
+            <tbody>
+              <tr><th scope="row">Every day</th><td>10:00 am – 6:45 pm</td></tr>
+              <tr><th scope="row">Breakfast</th><td>10:00 am – 12:00 pm</td></tr>
+            </tbody>
+          </table>
+          <p class="visit__note reveal" style="--i:4">Hours as listed on Postmates and DoorDash, September 2026. Call ahead on holidays.</p>
+          <div class="visit__actions reveal" style="--i:5">
+            <a class="btn btn--accent" href="https://www.google.com/maps/search/?api=1&query=La+Fonda+Antioque%C3%B1a+5125+Melrose+Ave+Los+Angeles+CA+90038" target="_blank" rel="noopener">Get directions</a>
+            <a class="btn btn--outline" href="tel:+13239575164">Call</a>
+          </div>
+          <a class="visit__maplink reveal" style="--i:6" href="https://www.google.com/maps/search/?api=1&query=La+Fonda+Antioque%C3%B1a+5125+Melrose+Ave+Los+Angeles+CA+90038" target="_blank" rel="noopener">Open in Google Maps →</a>
+        </div>
+        <figure class="visit__figure reveal">
+          <iframe class="visit__map" title="Map to La Fonda Antioqueña, 5125 Melrose Ave" src="https://www.google.com/maps?q=5125+Melrose+Ave,+Los+Angeles,+CA+90038&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </figure>
+      </div>
+    </section>
+
+    <!-- FINAL BAND -->
+    <section class="band" aria-labelledby="bandTitle">
+      <picture class="band__bg" aria-hidden="true">
+        <source srcset="media/photos/room-lamps-800.webp 800w, media/photos/room-lamps.webp 1600w" sizes="100vw" type="image/webp">
+        <img srcset="media/photos/room-lamps-800.jpg 800w, media/photos/room-lamps.jpg 1600w" sizes="100vw" src="media/photos/room-lamps.jpg" width="1600" height="900" alt="" loading="lazy">
+      </picture>
+      <div class="band__inner">
+        <p class="eyebrow eyebrow--light reveal" style="--i:0" lang="es">Buen provecho</p>
+        <h2 class="display display--light reveal" id="bandTitle" style="--i:1">Your table is waiting.</h2>
+        <p class="band__meta reveal" style="--i:2">5125 Melrose Ave · Open every day 10:00 am – 6:45 pm</p>
+        <div class="band__actions reveal" style="--i:3">
+          <a class="btn btn--accent" href="https://www.google.com/maps/search/?api=1&query=La+Fonda+Antioque%C3%B1a+5125+Melrose+Ave+Los+Angeles+CA+90038" target="_blank" rel="noopener">Get directions</a>
+          <a class="btn btn--ghost" href="tel:+13239575164">Call (323) 957-5164</a>
+          <a class="btn btn--ghost" href="https://www.doordash.com/store/la-fonda-antioque%C3%B1a-los-angeles-412762/" target="_blank" rel="noopener">Order now</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__grid">
+      <div>
+        <p class="brand brand--footer"><span class="brand__name">La Fonda</span><span class="brand__sub">Antioqueña</span></p>
+        <p>Colombian restaurant · Melrose Avenue, Los Angeles</p>
+        <p><a href="https://www.instagram.com/lafondaantioquenala/" target="_blank" rel="noopener">Follow on Instagram</a></p>
+      </div>
+      <div>
+        <p class="footer__h">Visit</p>
+        <p><a href="https://www.google.com/maps/search/?api=1&query=La+Fonda+Antioque%C3%B1a+5125+Melrose+Ave+Los+Angeles+CA+90038" target="_blank" rel="noopener">5125 Melrose Ave<br>Los Angeles, CA 90038</a></p>
+        <p><a href="tel:+13239575164">(323) 957-5164</a></p>
+        <p>Open every day 10:00 am – 6:45 pm</p>
+      </div>
+      <div>
+        <p class="footer__h">Order</p>
+        <p><a href="https://www.doordash.com/store/la-fonda-antioque%C3%B1a-los-angeles-412762/" target="_blank" rel="noopener">DoorDash</a></p>
+        <p><a href="https://postmates.com/store/la-fonda-antioquena/G8Qele-lRIWKfLqdcQejqQ" target="_blank" rel="noopener">Postmates</a></p>
+        <p><a href="tel:+13239575164">Call to order</a></p>
+      </div>
+      <div>
+        <p class="footer__h">Explore</p>
+        <p><a href="#story">Our Story</a></p>
+        <p><a href="#dishes">Dishes</a></p>
+        <p><a href="#menu">Menu</a></p>
+        <p><a href="#visit">Visit</a></p>
+      </div>
+    </div>
+    <p class="wrap footer__fine">Hours, menu descriptions and prices as listed on DoorDash and Postmates, September 2026. Photos from the restaurant's public listings, used with the owner's consent. © 2026 La Fonda Antioqueña.</p>
+  </footer>
+
+  <div class="mobile-bar" id="mobileBar" aria-label="Quick actions">
+    <a href="https://www.doordash.com/store/la-fonda-antioque%C3%B1a-los-angeles-412762/" target="_blank" rel="noopener">Order</a>
+    <a href="tel:+13239575164">Call</a>
+    <a href="https://www.google.com/maps/search/?api=1&query=La+Fonda+Antioque%C3%B1a+5125+Melrose+Ave+Los+Angeles+CA+90038" target="_blank" rel="noopener">Directions</a>
+  </div>
+
+  <!-- GSAP is injected by main.js only on wide screens that use the pinned rail -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
