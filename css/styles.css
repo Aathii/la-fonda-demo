@@ -372,3 +372,7 @@ figure { margin: 0; }
 html.reduce-motion .reveal, html.reduce-motion .gallery__item.reveal { opacity: 1; transform: none; transition: none; clip-path: none; }
 html.reduce-motion .story__figure.reveal picture, html.reduce-motion .visit__figure.reveal picture { clip-path: none; transition: none; }
 html.reduce-motion .story__figure img { transform: none; transition: none; }
+
+/* portfolio credit */
+.footer__credit { margin-top: 12px; text-align: right; opacity: .75; }
+.footer__credit:hover, .footer__credit:focus-within { opacity: 1; }
